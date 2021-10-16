@@ -226,6 +226,16 @@ var saveTasks = function(){
   localStorage.setItem("tasks", JSON.stringify(tasks));
 }
 
+var loadTasts = function(){
+  //get tasks from local storage
+  localStorage.getData(taskDataObj);
+  console.log(tasks);
+  //converts tasks from the string format back into an array of objects
+
+  //iterates through a tasts array and creates task elements on the page from it
+
+}
+
 // Create a new task
 formEl.addEventListener("submit", taskFormHandler);
 
